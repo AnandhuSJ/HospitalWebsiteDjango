@@ -1,0 +1,467 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Hospital Website</title>
+    <!-- aos css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- magnific popup css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static "css/home_css.css" %}">
+    <style>
+        .review{
+  background:url(/static/img/stethoscope.jpg), linear-gradient(var(--black),var(--black)) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+    </style>
+
+</head>
+<body>
+
+
+<!-- header section starts  -->
+
+<header>
+
+<div class="container">
+
+    <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+
+    <nav class="nav">
+        <ul>
+             <li><a href="/hospital/home">home</a></li>
+            <li><a href="/hospital/about">about</a></li>
+            <li><a href="/hospital/facility">facility</a></li>
+            <li><a href="/hospital/review">review</a></li>
+            <li><a href="/hospital/conta_ct">contact</a></li>
+            <li><a href="/hospital/post">post</a></li>
+        </ul>
+    </nav>
+
+    <div class="fas fa-bars"></div>
+
+</div>
+
+    <center><h3 style="color: #0188DF"> <span style="color: darkred">{{ member.full_name }}</span>  __   Your Appoinment is Booked...We will update you through this mail   __<span style="color: darkred">{{ member.mail }}</span> </h3></center>
+    <center><h3 style="color: #0188DF"> <span style="color: darkred">{{ member1.full_name }}</span></h3></center>
+</header>
+
+<!-- header section ends  -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+<div class="container">
+
+    <div class="row min-vh-100 align-items-center text-center text-md-left">
+
+        <div class="col-md-6 pr-md-5" data-aos="zoom-in">
+            <img  src="{% static 'img/Doctors-bro.svg' %}" alt="">
+        </div>
+
+        <div class="col-md-6 pl-md-5 content" data-aos="fade-left">
+            <h1><span>stay</span> safe, <span>stay</span> healthy.</h1>
+            <h3>caring for you.</h3>
+            <a href="#"><button class="button">learn more</button></a>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- home section ends -->
+
+<!-- about section start  -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+    <div class="row min-vh-100 align-items-center">
+
+        <div class="col-md-6 content" data-aos="fade-right">
+
+            <div class="box">
+                <h3> <i class="fas fa-ambulance"></i> ambulance services </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-procedures"></i> emergency rooms </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-stethoscope"></i> free check-ups </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, suscipit.</p>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 d-none d-md-block" data-aos="fade-left">
+            <img  src="{% static 'img/clipart-doctor-lady-doctor-11.png' %}" style="width: 100%;" alt="">
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- facility section starts  -->
+
+<section class="facility" id="facility">
+
+<div class="container">
+
+<h1 class="heading"><span>'</span> our facilities <span>'</span></h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/teamofdoctors.jpg' %}" title="our team">
+           <img  src="{% static 'img/laboratory-g476717565_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/analysis-g48feff1f6_1920.jpg' %}" title="our lab">
+             <img  src="{% static 'img/laboratory-g9572626d0_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+         <a href="{% static 'img/surgery-g8db7793bd_1920.jpg' %}" title="emergency rooms">
+            <img  src="{% static 'img/surgery-g8db7793bd_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/woman-g2bdaa7399_1920.jpg' %}" title="expert doctors">
+             <img  src="{% static 'img/woman-g2bdaa7399_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/doctor-gcd39104f9_1920.jpg' %}" title="expert doctors">
+             <img  src="{% static 'img/doctor-gcd39104f9_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+         <a href="{% static 'img/emergency-room.jpg' %}" title="emergency rooms">
+             <img  src="{% static 'img/emergency-room.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/doctor-gd8c18fd49_1920.jpg' %}" title="expert doctors">
+             <img  src="{% static 'img/doctor-gd8c18fd49_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/Emergency-Trauma-ER-Doctor-Nurses-Rushing-01.jpg' %}" title="emergency rooms">
+             <img  src="{% static 'img/Emergency-Trauma-ER-Doctor-Nurses-Rushing-01.jpg' %}" alt="">
+        </a>
+    </div>
+
+    <div class="box" data-aos="zoom-in">
+        <a href="{% static 'img/hospital-g3fb1e1249_1920.jpg' %}" title="enough beds">
+             <img  src="{% static 'img/hospital-g3fb1e1249_1920.jpg' %}" alt="">
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- facility section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<div class="container">
+
+<h1 class="heading"><span>'</span> people's review <span>'</span></h1>
+
+<div class="box-container">
+
+    <div class="box" data-aos="fade-right">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque. Atque totam ad sint ducimus! Maxime!</p>
+        <h3>someone's name</h3>
+        <span>jan 5, 2021</span>
+       <img  src="{% static 'img/pexels-andrea-piacquadio-733872.jpg' %}" alt="">
+    </div>
+
+    <div class="box" data-aos="fade-up">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque. Atque totam ad sint ducimus! Maxime!</p>
+        <h3>someone's name</h3>
+        <span>jan 7, 2021</span>
+        <img  src="{% static 'img/pexels-andrea-piacquadio-846741.jpg' %}" alt="">
+    </div>
+
+    <div class="box" data-aos="fade-left">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur accusantium error numquam dolore atque. Atque totam ad sint ducimus! Maxime!</p>
+        <h3>someone's name</h3>
+        <span>jan 10, 2021</span>
+        <img  src="{% static 'img/pexels-italo-melo-2379005.jpg' %}" alt="">
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- review section ends  -->
+
+<!-- counter section starts  -->
+
+<section class="counter">
+
+    <div class="container">
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-hospital"></i>
+                <span>120+</span>
+                <h3>Hospitals</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-users"></i>
+                <span>100+</span>
+                <h3>staff</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-smile"></i>
+                <span>1200+</span>
+                <h3>happy patients</h3>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-procedures"></i>
+                <span>130+</span>
+                <h3>bed facility</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- counter section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <div class="container min-vh-100">
+
+        <div class="row justify-content-center">
+
+            <h1 class="heading"><span>'</span> make an appointment <span>'</span></h1>
+
+            <div class="col-md-10" data-aos="flip-down">
+
+               <form action="/hospital/appo" method="post">
+                   {% csrf_token %}
+
+                    <div class="inputBox">
+                        <input type="text" name="name" placeholder="full name">
+                        <input type="number" name="phone" placeholder="phone">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" name="email" placeholder="your email">
+                        <select name="make" id="">
+                            <option value="" disabled selected>make an appointment</option>
+                            <option value="09-11 am">09-11 am</option>
+                            <option value="11-03 pm">11-03 pm</option>
+                            <option value="03-06 pm">03-06 pm</option>
+                            <option value="06-09 pm">06-09 pm</option>
+                        </select>
+                    </div>
+
+                    <textarea name="msg" id="" cols="30" rows="10" placeholder="message ( optional )"></textarea>
+
+                    <input type="submit" name="" id="" value="make appointment" class="button">
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- post section starts  -->
+
+<section class="post" id="post">
+
+    <div class="container min-vh-100">
+
+        <h1 class="heading"><span>'</span> out posts <span>'</span></h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-right">
+                <img  src="{% static 'img/doctor-g8a5b6e4c0_1920.jpg' %}" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img  src="{% static 'img/assistant-g1649b8372_1920.jpg' %}" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-left">
+                <img  src="{% static 'img/scientist-g5acd00ab5_1920.jpg' %}" alt="">
+                <div class="content">
+                    <span>jan 5, 2021</span>
+                    <a href="#"><h3>post title goes here</h3></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ex porro libero at veniam molestias facere quo necessitatibus ipsum ad?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- post section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4" data-aos="fade-right">
+                <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nemo porro quasi minima consequuntur dolorum, quas amet in autem id?</p>
+            </div>
+
+            <div class="col-md-4 text-center" data-aos="fade-up">
+                <h3>links</h3>
+                <a href="/hospital/home">home</a>
+                <a href="/hospital/about">about</a>
+                <a href="/hospital/facility">facility</a>
+                <a href="/hospital/review">review</a>
+                <a href="/hospital/contact">contact</a>
+                <a href="/hospital/post">post</a>
+            </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-left"><br>
+            <h4 style="color: chartreuse;font-weight: 700;">Our Newsletter</h4>
+            <p style="font-weight: 700;color:lightseagreen ">DO Visit Again to Our Website</p>
+           <form action="/hospital/ema" method="post" class="newsletter-box">
+                                {% csrf_token %}
+               <input type="email" name="mail" placeholder="your email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+            <div class="col-md-4 text-center" data-aos="fade-left">
+                <h3>share</h3>
+                <a href="https://www.facebook.com/">facebook</a>
+                <a href="https://twitter.com/">twitter</a>
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://github.com/">github</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- aos js file cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- custom js link  -->
+<script src={% static "js/main.js" %}></script>
+
+
+<script>
+
+AOS.init({
+    duration:1000,
+    delay:400
+});
+
+</script>
+
+</body>
+</html>
